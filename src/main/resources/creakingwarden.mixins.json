@@ -4,6 +4,7 @@
   "package": "org.ardufish.creakingwarden.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "creak"
   ],
   "injectors": {
     "defaultRequire": 1
