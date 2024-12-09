@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "creakingwarden",
+  "version": "${version}",
+  "name": "creakingwarden",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/creakingwarden/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "org.ardufish.creakingwarden.Creakingwarden"
+    ]
+  },
+  "mixins": [
+    "creakingwarden.mixins.json",
+    {
+      "config": "creakingwarden.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
